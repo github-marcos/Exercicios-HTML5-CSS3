@@ -21,18 +21,31 @@
             padding: 10px;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(206, 205, 205);
+        }
+
         thead , tfoot{
             background-color: grey;
         }
+
+        .num{
+            text-align: right;
+        }
+        
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
 
             </tr>
         </thead>
@@ -40,26 +53,26 @@
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>45 919 049</td>
+                <td class="num">45 919 049</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>21 168 791</td>
+                <td class="num">21 168 791</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>17 264 943</td>
+                <td class="num">17 264 943</td>
             </tr>
             <tr>
                 <td>Bahia</td>
-                <td>14 073 064</td>
+                <td class="num">14 073 064</td>
             </tr>
         </tbody>
 
         <tfoot>
             <tr>
-                <td>Total de habitantes </td>
-                <td><strong>0000</strong></td>
+                <th scope="row">Total de habitantes </th>
+                <td class="num"><strong>0000</strong></td>
             </tr>
         </tfoot>
     </table>
